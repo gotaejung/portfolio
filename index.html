@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biogra - Personal Portfolio Template</title>
+    
+    <!-- Pretendard Variable Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='40' viewBox='0 0 100 40'%3E%3Ctext x='10' y='25' font-family='Pretendard Variable' font-size='18' font-weight='700' fill='%23000'%3EBIOGRA%3C/text%3E%3C/svg%3E" alt="Biogra">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-titles">
+                        <p class="hero-subtitle">Sr Product Designer</p>
+                        <p class="hero-subtitle">Design Director & Visualizers</p>
+                    </div>
+                    
+                    <div class="hero-main-title">
+                        <h1 class="design-text">
+                            <span class="letter">D</span>
+                            <span class="letter">E</span>
+                            <span class="letter">S</span>
+                            <span class="letter">I</span>
+                            <span class="letter">G</span>
+                            <span class="letter">N</span>
+                        </h1>
+                        <div class="director-text">
+                            <span>director & visualizes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-intro">
+                        <div class="intro-text">
+                            <p>Hey, I'm David</p>
+                            <h2>7+ Years of Experience<br>in product design</h2>
+                        </div>
+                        <div class="hero-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='500' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%23f5f5f5'/%3E%3Ccircle cx='200' cy='150' r='80' fill='%23e0e0e0'/%3E%3Crect x='120' y='250' width='160' height='200' rx='80' fill='%23d0d0d0'/%3E%3Ctext x='200' y='400' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3EProfile Image%3C/text%3E%3C/svg%3E" alt="David Michel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-left">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='400' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%23f0f0f0'/%3E%3Ccircle cx='150' cy='120' r='60' fill='%23e0e0e0'/%3E%3Crect x='90' y='200' width='120' height='150' rx='60' fill='%23d0d0d0'/%3E%3Ctext x='150' y='370' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3EAbout Image%3C/text%3E%3C/svg%3E" alt="About Image">
+                </div>
+                
+                <div class="about-right">
+                    <h4 class="section-subtitle spaced-text">A b o u t &nbsp;&nbsp;&nbsp; M e</h4>
+                    <h2 class="section-title spaced-text">P a s s i o n a t e &nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp; L e a d &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P r o d u c t &nbsp;&nbsp;&nbsp; d e s i g n e r</h2>
+                    
+                    <p class="about-description">
+                        "I'm David Michel a UI/UX designer passionate about creating intuitive, user-centered digital experiences. I help brands turn's complex ideas into seamless interfaces. I have complete 100+ projects"
+                    </p>
+                    
+                    <a href="#" class="btn-primary">Download Resume</a>
+                    
+                    <div class="experience-education">
+                        <div class="experience">
+                            <h4 class="spaced-text">E x p e r i e n c e</h4>
+                            <div class="exp-item">
+                                <span class="year">2023 - Present</span>
+                                <h5>Design Lead Microsoft</h5>
+                            </div>
+                            <div class="exp-item">
+                                <span class="year">2020 - 2022</span>
+                                <h5>SR Product Designer Google -In-Tech</h5>
+                            </div>
+                            <div class="exp-item">
+                                <span class="year">2017 - 2019</span>
+                                <h5>Visualizer & Directors Apple Software</h5>
+                            </div>
+                            <div class="exp-item">
+                                <span class="year">2013 - 2016</span>
+                                <h5>Lead UX Designer Awwwards</h5>
+                            </div>
+                        </div>
+                        
+                        <div class="education">
+                            <h4 class="spaced-text">E d u c a t i o n</h4>
+                            <ul>
+                                <li>BSC in CSE London University (2006-2010)</li>
+                                <li>UX Design World University (2000-2002)</li>
+                                <li>UI Design USA University (1999-2000)</li>
+                                <li>Diploma in CSE Japan University (2006-2010)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="signature">
+                        <h5>David Michel</h5>
+                        <p>Visualizer & Design Director</p>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Cpath d='M10 20 Q30 10 50 20 T90 20' stroke='%23333' stroke-width='2' fill='none'/%3E%3Ctext x='10' y='35' font-family='Pretendard Variable' font-size='10' fill='%23999'%3ESignature%3C/text%3E%3C/svg%3E" alt="Signature">
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h4 class="spaced-text">C o n t a c t</h4>
+                        <ul>
+                            <li>Phone Number <a href="tel:+12345678899">+1 (234) 567 8899</a></li>
+                            <li>Email Address <a href="mailto:davidmichel@gmail.com">davidmichel@gmail.com</a></li>
+                            <li>Website <a href="#">davidmichel.com</a></li>
+                            <li>Current Address New York</li>
+                        </ul>
+                        
+                        <div class="social-media">
+                            <h4 class="spaced-text">s o c i a l &nbsp;&nbsp;&nbsp; m e d i a</h4>
+                            <div class="social-item">
+                                <h5>LinkedIn (15k Followers)</h5>
+                                <a href="#" class="btn-follow">Follow</a>
+                            </div>
+                            <div class="social-item">
+                                <h5>Instagram (8k Followers)</h5>
+                                <a href="#" class="btn-follow">Follow</a>
+                            </div>
+                            <div class="social-item">
+                                <h5>Twitter (8k Followers)</h5>
+                                <a href="#" class="btn-follow">Follow</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sponsors Section -->
+        <div class="sponsors">
+            <div class="sponsors-scroll">
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Sponsor</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Brand</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Client</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Partner</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Company</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Logo</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Brand</text>
+                    </svg>
+                </div>
+                <div class="sponsor-item">
+                    <svg width="80" height="40" viewBox="0 0 80 40">
+                        <rect width="80" height="40" fill="#f5f5f5" rx="4"/>
+                        <text x="40" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#999">Client</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works">
+        <div class="container">
+            <h4 class="section-subtitle spaced-text">w o r k s</h4>
+            <h2 class="section-title spaced-text">A &nbsp;&nbsp;&nbsp; S h o w c a s e &nbsp;&nbsp;&nbsp; o f &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D i g i t a l &nbsp;&nbsp;&nbsp; D e s i g n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; E x c e l l e n c e , &nbsp;&nbsp;&nbsp; M y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W o r k , &nbsp;&nbsp;&nbsp; Y o u r &nbsp;&nbsp;&nbsp; N e x t &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I n s p i r a t i o n</h2>
+            
+            <div class="works-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f8f8'/%3E%3Crect x='20' y='20' width='260' height='120' fill='%23e8e8e8' rx='8'/%3E%3Ctext x='150' y='170' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3ELanding Page%3C/text%3E%3C/svg%3E" alt="Landing Page Design">
+                    </div>
+                    <div class="work-content">
+                        <h3><a href="#">Landing Page Design</a></h3>
+                        <ul>
+                            <li>Product Designer</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f8f8'/%3E%3Crect x='120' y='30' width='60' height='120' fill='%23e8e8e8' rx='8'/%3E%3Ctext x='150' y='170' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3EMobile App%3C/text%3E%3C/svg%3E" alt="Mobile Apps Design">
+                    </div>
+                    <div class="work-content">
+                        <h3><a href="#">Mobile Apps Design</a></h3>
+                        <ul>
+                            <li>Product Designer</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f8f8'/%3E%3Ccircle cx='150' cy='100' r='50' fill='%23e8e8e8'/%3E%3Ctext x='150' y='170' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3EBranding%3C/text%3E%3C/svg%3E" alt="Branding Identity Design">
+                    </div>
+                    <div class="work-content">
+                        <h3><a href="#">Branding Identity Design</a></h3>
+                        <ul>
+                            <li>Product Designer</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f8f8'/%3E%3Crect x='80' y='40' width='140' height='100' fill='%23e8e8e8' rx='4'/%3E%3Ctext x='150' y='170' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3EBook Cover%3C/text%3E%3C/svg%3E" alt="Book Cover Mockup Design">
+                    </div>
+                    <div class="work-content">
+                        <h3><a href="#">Book Cover Mockup Design</a></h3>
+                        <ul>
+                            <li>Product Designer</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f8f8f8'/%3E%3Crect x='120' y='30' width='60' height='120' fill='%23e8e8e8' rx='8'/%3E%3Ctext x='150' y='170' text-anchor='middle' font-family='Pretendard Variable' font-size='12' fill='%23999'%3EMobile App%3C/text%3E%3C/svg%3E" alt="Mobile Apps Design">
+                    </div>
+                    <div class="work-content">
+                        <h3><a href="#">Mobile Apps Design</a></h3>
+                        <ul>
+                            <li>Product Designer</li>
+                            <li>UX/UI Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h4 class="section-subtitle spaced-text">S e r v i c e s</h4>
+            <h2 class="section-title spaced-text">H u m a n - C e n t e r e d &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; D e s i g n , &nbsp;&nbsp;&nbsp; D e l i v e r e d &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S o l u t i o n s</h2>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" fill="#f5f5f5" rx="8"/>
+                            <circle cx="30" cy="30" r="15" stroke="#333" stroke-width="2"/>
+                            <path d="M20 30h20M30 20v20" stroke="#333" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3><a href="#">Brand Identity & Art Direction</a></h3>
+                    <p>Creating cohesive visual systems that define brand's personal identity</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" fill="#f5f5f5" rx="8"/>
+                            <rect x="15" y="15" width="30" height="30" stroke="#333" stroke-width="2" rx="4"/>
+                            <circle cx="30" cy="30" r="8" stroke="#333" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3><a href="#">Visual Concept Development</a></h3>
+                    <p>Creating cohesive visual systems that define brand's personal identity</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" fill="#f5f5f5" rx="8"/>
+                            <path d="M15 30L30 15L45 30L30 45L15 30Z" stroke="#333" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="5" fill="#333"/>
+                        </svg>
+                    </div>
+                    <h3><a href="#">Motion & Visual Storytelling</a></h3>
+                    <p>Creating cohesive visual systems that define brand's personal identity</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <rect width="60" height="60" fill="#f5f5f5" rx="8"/>
+                            <rect x="10" y="20" width="40" height="25" stroke="#333" stroke-width="2" rx="2"/>
+                            <rect x="15" y="15" width="30" height="2" fill="#333"/>
+                        </svg>
+                    </div>
+                    <h3><a href="#">Digital & Print Design</a></h3>
+                    <p>Creating cohesive visual systems that define brand's personal identity</p>
+                    <a href="#" class="service-link">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Stats Section -->
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>80+</h3>
+                    <p>Years Of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>80+</h3>
+                    <p>Projects Complete</p>
+                </div>
+                <div class="stat-item">
+                    <h3>80%</h3>
+                    <p>Clients Satisfied</p>
+                </div>
+                <div class="stat-item">
+                    <h3>80+</h3>
+                    <p>Awards Winning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skills-content">
+                <div class="skills-left">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f8f8f8'/%3E%3Crect x='50' y='50' width='300' height='200' fill='%23e8e8e8' rx='8'/%3E%3Ctext x='200' y='160' text-anchor='middle' font-family='Pretendard Variable' font-size='14' fill='%23999'%3ESkills Image%3C/text%3E%3C/svg%3E" alt="Skills Image">
+                </div>
+                
+                <div class="skills-right">
+                    <h4 class="section-subtitle spaced-text">B e s t &nbsp;&nbsp;&nbsp; s k i l l s</h4>
+                    <h2 class="section-title spaced-text">M a s t e r i n g &nbsp;&nbsp;&nbsp; t h e &nbsp;&nbsp;&nbsp; W e b , &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O n e &nbsp;&nbsp;&nbsp; L i n e &nbsp;&nbsp;&nbsp; o f &nbsp;&nbsp;&nbsp; C o d e &nbsp;&nbsp;&nbsp; a t &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a &nbsp;&nbsp;&nbsp; T i m e</h2>
+                    
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-number">01</span>
+                            <div class="skill-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="#ff6b35" rx="8"/>
+                                    <text x="20" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="10" fill="white">Fi</text>
+                                </svg>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Figma</h3>
+                                <p>Design<span>Advance</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-number">02</span>
+                            <div class="skill-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="#0070f3" rx="8"/>
+                                    <text x="20" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="10" fill="white">Fr</text>
+                                </svg>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Framer</h3>
+                                <p>Development<span>Advance</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-number">03</span>
+                            <div class="skill-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="#31a8ff" rx="8"/>
+                                    <text x="20" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="10" fill="white">Ps</text>
+                                </svg>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Photoshop</h3>
+                                <p>Design<span>Advance</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-number">04</span>
+                            <div class="skill-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="#ff9a00" rx="8"/>
+                                    <text x="20" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="10" fill="white">Ai</text>
+                                </svg>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Illustrator</h3>
+                                <p>Design<span>Advance</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-number">05</span>
+                            <div class="skill-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="#9999ff" rx="8"/>
+                                    <text x="20" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="10" fill="white">Ae</text>
+                                </svg>
+                            </div>
+                            <div class="skill-info">
+                                <h3>After-effects</h3>
+                                <p>Video FX<span>Advance</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <span class="skill-number">06</span>
+                            <div class="skill-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" fill="#fdbf00" rx="8"/>
+                                    <text x="20" y="25" text-anchor="middle" font-family="Pretendard Variable" font-size="10" fill="white">Sk</text>
+                                </svg>
+                            </div>
+                            <div class="skill-info">
+                                <h3>Sketch</h3>
+                                <p>Design<span>Advance</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h4 class="section-subtitle spaced-text">T e s t i m o n i a l s</h4>
+            <h2 class="section-title spaced-text">W h a t &nbsp;&nbsp;&nbsp; C l i e n t s &nbsp;&nbsp;&nbsp; S a y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A b o u t &nbsp;&nbsp;&nbsp; m y &nbsp;&nbsp;&nbsp; S e r v i c e s</h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-content">
+                        <h5>Quality Designer</h5>
+                        <blockquote>
+                            "Working with completely elevated our product. Their attention to user experience, clean design, and ability to simplify complex flows made a huge impact."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23e0e0e0'/%3E%3Ccircle cx='30' cy='25' r='8' fill='%23ccc'/%3E%3Cpath d='M15 50 Q15 40 30 40 Q45 40 45 50' fill='%23ccc'/%3E%3C/svg%3E" alt="David Michel">
+                            <div class="author-info">
+                                <h4>David Michel</h4>
+                                <p>Product Manager, Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <h5>Quality Designer</h5>
+                        <blockquote>
+                            "Working with completely elevated our product. Their attention to user experience, clean design, and ability to simplify complex flows made a huge impact."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23e0e0e0'/%3E%3Ccircle cx='30' cy='25' r='8' fill='%23ccc'/%3E%3Cpath d='M15 50 Q15 40 30 40 Q45 40 45 50' fill='%23ccc'/%3E%3C/svg%3E" alt="Elena Candelo">
+                            <div class="author-info">
+                                <h4>Elena Candelo</h4>
+                                <p>Product Manager, Apple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <h5>Quality Designer</h5>
+                        <blockquote>
+                            "From wireframes to final designs, every step handled with precision. David Michel always kept the end user in mind and created a seamless experience."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23e0e0e0'/%3E%3Ccircle cx='30' cy='25' r='8' fill='%23ccc'/%3E%3Cpath d='M15 50 Q15 40 30 40 Q45 40 45 50' fill='%23ccc'/%3E%3C/svg%3E" alt="Mira Tendulkar">
+                            <div class="author-info">
+                                <h4>Mira Tendulkar</h4>
+                                <p>Product Manager, Google</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <h5>Quality Designer</h5>
+                        <blockquote>
+                            "Working with completely elevated our product. Their attention to user experience, clean design, and ability to simplify complex flows made a huge impact."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%23e0e0e0'/%3E%3Ccircle cx='30' cy='25' r='8' fill='%23ccc'/%3E%3Cpath d='M15 50 Q15 40 30 40 Q45 40 45 50' fill='%23ccc'/%3E%3C/svg%3E" alt="James Rossouw">
+                            <div class="author-info">
+                                <h4>James Rossouw</h4>
+                                <p>Product Manager, Awards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="nav-btn prev-btn">❮</button>
+                <button class="nav-btn next-btn">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards">
+        <div class="container">
+            <h2 class="section-title spaced-text">L e t ' s &nbsp;&nbsp;&nbsp; E x p l o r e &nbsp;&nbsp;&nbsp; M y &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A w a r d s &nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A c h i e v e m e n t s</h2>
+            
+            <div class="awards-content">
+                <div class="trophy-image">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <rect width="200" height="200" fill="#f8f8f8"/>
+                        <circle cx="100" cy="80" r="30" fill="#ffd700" stroke="#ff8c00" stroke-width="3"/>
+                        <rect x="85" y="110" width="30" height="40" fill="#cd853f"/>
+                        <rect x="75" y="150" width="50" height="10" fill="#8b4513"/>
+                        <text x="100" y="85" text-anchor="middle" font-family="Pretendard Variable" font-size="12" fill="#b8860b">🏆</text>
+                    </svg>
+                </div>
+                
+                <div class="awards-list">
+                    <div class="award-item">
+                        <div class="award-year">2023</div>
+                        <h3>Framer Award</h3>
+                        <p>Lead Designer</p>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'%3E%3Crect width='80' height='60' fill='%23f0f0f0' rx='4'/%3E%3Ctext x='40' y='35' text-anchor='middle' font-family='Pretendard Variable' font-size='10' fill='%23999'%3EAward%3C/text%3E%3C/svg%3E" alt="Award">
+                    </div>
+                    
+                    <div class="award-item">
+                        <div class="award-year">2022</div>
+                        <h3>Behance Prize</h3>
+                        <p>Senior Visual</p>
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='60' viewBox='0 0 80 60'%3E%3Crect width='80' height='60' fill='%23f0f0f0' rx='4'/%3E%3Ctext x='40' y='35' text-anchor='middle' font-family='Pretendard Variable' font-size='10' fill='%23999'%3EAward%3C/text%3E%3C/svg%3E" alt="Award">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Contact Us</h3>
+                    <p>Valentin, Street Road 24, New York</p>
+                    <p><a href="tel:+000123456789">+000 123 (456) 789</a></p>
+                    <p><a href="mailto:biogracontact@gmail.com">biogracontact@gmail.com</a></p>
+                </div>
+                
+                <div class="footer-about">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
