@@ -7,7 +7,7 @@ const heroTitle = document.querySelector('.hero-title');
 const heroIntro = document.querySelector('.hero-intro');
 const heroImage = document.querySelector('.hero-image');
 const floatingShapes = document.querySelectorAll('.shape');
-const projectCards = document.querySelectorAll('.project-card');
+/* const projectCards = document.querySelectorAll('.project-card'); */
 const serviceCards = document.querySelectorAll('.service-card');
 const skillItems = document.querySelectorAll('.skill-item');
 const statItems = document.querySelectorAll('.stat-item');
@@ -153,6 +153,19 @@ gsap.from('.about-text', {
 });
 
 // Timeline animations
+gsap.from('.profile-item', {
+    duration: 0.8,
+    x: -30,
+    opacity: 0,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: '.profile',
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+    }
+});
 gsap.from('.timeline-item', {
     duration: 0.8,
     x: -30,
@@ -201,7 +214,7 @@ if (marqueeTrack) {
 }
 
 // Project cards animations
-if (projectCards.length > 0) {
+/* if (projectCards.length > 0) {
     gsap.from(projectCards, {
         duration: 0.8,
         y: 50,
@@ -214,10 +227,10 @@ if (projectCards.length > 0) {
             end: "bottom 20%",
             toggleActions: "play none none reverse"
         }
-    });
+    }); */
     
     // Hover animations for project cards
-    projectCards.forEach(card => {
+/*     projectCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
             gsap.to(card, {
                 duration: 0.3,
@@ -236,7 +249,7 @@ if (projectCards.length > 0) {
             });
         });
     });
-}
+} */
 
 // Service cards animations
 if (serviceCards.length > 0) {
@@ -412,8 +425,8 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY - 10 + 'px';
 });
 
-// Scale cursor on hover over interactive elements
-const interactiveElements = document.querySelectorAll('a, button, .project-card, .service-card');
+// Scale cursor on hover over interactive elements. .project-card,  
+const interactiveElements = document.querySelectorAll('a, button, .service-card');
 interactiveElements.forEach(element => {
     element.addEventListener('mouseenter', () => {
         cursor.style.transform = 'scale(2)';
