@@ -33,14 +33,8 @@
                 <div class="nav-menu">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">About</a>
-                    <a href="#Projects" class="nav-link">Projects</a>
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="#Skills" class="nav-link">Skills</a>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <a href="#works" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
                 </div>
             </nav>
         </div>
@@ -49,36 +43,31 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-contents">
-                    <div class="hero-text">
-                        <h1 class="hero-title">WEB PLANNER<br>& WEB PUBLISHER
-                        </h1>
-                    </div>
-                    <div class="hero-intro">
-                        <div class="intro-contents">
-                            <div class="scroll-indicator">
-                                <div class="scroll-line"></div>
-                            </div>
-                            <div class="intro-text">
-                                <h2>Go Further, <br> Go Beyond, <br><strong>Go Taejung</strong></h2>
-                            </div>
+            <div class="hero-content df co">
+                <h1 class="hero-title">
+                    <span class="fix">WEB</span>
+                    <span class="dyn"><span class="a1">PLANNER</span><span class="a2">PUBLISHER</span></span>
+                </h1>
+                <div class="hero-intro">
+                    <div class="intro-contents">
+                        <div class="scroll-indicator">
+                            <div class="scroll-line"></div>
                         </div>
-                        <div class="hero-badges">
-                            <a
-                                href="https://drive.google.com/file/d/1pSjnhqeyH6fCeiIb-3ufqdHZ2lKiSFTQ/view?usp=sharing"><span
-                                    class="hero-badge">이력서 보기</span></a>
-                            <a href="https://github.com/gotaejung?tab=repositories"><span class="hero-badge">깃허브
-                                    보기</span></a>
+                        <div class="intro-text">
+                            <h2>Go Further, <br> Go Beyond, <br><strong>Go Taejung</strong></h2>
                         </div>
                     </div>
-                </div>
-                    <lottie-player src="animations/Cute Bird Flapping Animation.json"
-                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-                    </lottie-player>
+                    <div class="hero-badges">
+                        <a href="https://drive.google.com/file/d/1pSjnhqeyH6fCeiIb-3ufqdHZ2lKiSFTQ/view?usp=sharing"><span
+                                class="hero-badge">이력서 보기</span></a>
+                        <a href="https://github.com/gotaejung?tab=repositories"><span class="hero-badge">깃허브
+                                보기</span></a>
+                    </div>
                 </div>
             </div>
         </div>
+        <lottie-player src="animations/main1.json" background="transparent" speed="1" loop autoplay
+            class="hero-ani"></lottie-player>
     </section>
 
     <!-- About Section -->
@@ -86,7 +75,8 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="/images/cow.jpg" alt="About Me">
+                    <lottie-player src="animations/main2.json" background="transparent" speed="1" loop autoplay
+                        class="about-ani"></lottie-player>
                 </div>
                 <div class="about-text">
                     <h4 class="section-subtitle spaced-text">About Me</h4>
@@ -198,18 +188,19 @@
                         <div class="project-body">
                             <h4> </h4>
                             <ul>
-                                <li>기술스택 : HTML, CSS, JavaScript, Git</li>
                                 <li>제작기간 : 3주</li>
                                 <li>기여도 : 100%</li>
-                                <li>브라우저 호환성</li>
-                                <li>배포매체</li>
-                                <li>페이지수</li>
+                                <li>기술스택: HTML5, CSS3, 바닐라 JS, Swiper</li>
+                                <li>브라우저 호환성: 최신 브라우저(Chrome/Edge/Firefox/Safari)</li>
+                                <li>배포매체: GitHub Pages 정적 호스팅</li>
+                                <li>페이지수: 단일 HTML 파일(index.html) 기반의 싱글페이지 구성</li>
+                                <li>특징: 대형 단일 파일 구조, 탭·슬라이더·다단계 메뉴 포함</li>
                             </ul>
                         </div>
                         <div class="project-tags">
-                            <a href=""><span>기획서 보기</span></a>
-                            <a href="https://gotaejung.github.io/project1"><span>사이트 보기</span></a>
-                            <a href="https://github.com/gotaejung/project1.git"><span>깃허브 보기</span></a>
+                            <!-- <a href=""><span>기획서 보기</span></a> -->
+                            <a href="https://gotaejung.github.io/project1" target="_blank"><span>사이트 보기</span></a>
+                            <a href="https://github.com/gotaejung/project1.git" target="_blank"><span>깃허브 보기</span></a>
                         </div>
                     </div>
                 </div>
@@ -231,20 +222,20 @@
                         <div class="project-body">
                             <h4> </h4>
                             <ul>
-                                <li>기술스택 : React, ReactRouter, Python, Tailwind, Git, Render, Vercel </li>
                                 <li>제작기간 : 2-3주</li>
                                 <li>기여도 : 25%</li>
-                                <li>브라우저 호환성 : </li>
-                                <li>배포매체 : </li>
-                                <li>페이지수 : </li>
+                                <li>기술스택 : React 19 + Vite, ReactRouter, Python, TailwindCSS, Git, Render, Vercel, Axios </li>
+                                <li>브라우저 호환성: 모던(Chrome/Firefox/Edge/Safari) 지원</li>
+                                <li>배포매체: Vercel에 배포됨 (https://frontend-nu-orcin-85.vercel.app)</li>
+                                <li>페이지수: SPA(React Router) 기반 다중 라우트</li>
+                                <li>특징: Vite로 빠른 빌드·개발, Tailwind로 유틸리티 스타일링, 캐러셀 포함</li>
                             </ul>
                         </div>
                         <div class="project-tags">
-                            <a
-                                href="https://drive.google.com/file/d/1TJXuUb5uD82MOU-J6I8mH12xJ6jMy867/view?usp=sharing"><span>기획서
-                                    보기</span></a>
-                            <a href="https://frontend-nu-orcin-85.vercel.app"><span>사이트 보기</span></a>
-                            <a href="https://github.com/gotaejung/frontend.git"><span>깃허브 보기</span></a>
+                            <a href="https://frontend-nu-orcin-85.vercel.app" target="_blank"><span>사이트 보기</span></a>
+                            <a href="https://github.com/gotaejung/frontend.git" target="_blank"><span>깃허브 보기</span></a>
+                            <a href="https://drive.google.com/file/d/1TJXuUb5uD82MOU-J6I8mH12xJ6jMy867/view?usp=sharing"
+                                target="_blank"><span>기획서 보기</span></a>
                         </div>
                     </div>
                 </div>
@@ -253,8 +244,10 @@
             <div class="projects-flex">
                 <div class="project-card">
                     <div class="project-wrap">
-                        <div class="project-image">
-                            <img src="images/hanam.png" alt="Landing Page Design">
+                        <div class="project-prototype">
+                            <iframe
+                                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F8uD5c2MUGkUOITAxbNvwdN%2F%25EC%2597%25AC%25EA%25B8%25B0GO-%25EC%2595%25B1-%25ED%2594%2584%25EB%25A1%259C%25ED%2586%25A0%25ED%2583%2580%25EC%259E%2585%3Fpage-id%3D2103%253A264%26node-id%3D2103-2084%26p%3Df%26viewport%3D343%252C7%252C0.13%26t%3DtsFYhyD6ILR4zWTZ-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D2103%253A1948"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="project-info">
@@ -265,21 +258,18 @@
                         <div class="project-body">
                             <h4> </h4>
                             <ul>
-                                <li>기술스택 : Figma</li>
-                                <li>제작기간</li>
-                                <li>기여도</li>
-                                <li>브라우저 호환성</li>
-                                <li>배포매체</li>
-                                <li>페이지수</li>
+                                <li></li>
+                                <li>기술스택 : Figma, AfterEffect</li>
+                                <li>제작기간 : 2-3주</li>
+                                <li>기여도 : 33%</li>
                             </ul>
                         </div>
                         <div class="project-tags">
-                            <a
-                                href="https://drive.google.com/file/d/1XZeTCz18WRbENurG90RK6QcYj9nQlVUG/view?usp=sharing"><span>기획서
+                            <a href="https://www.figma.com/proto/8uD5c2MUGkUOITAxbNvwdN/%EC%97%AC%EA%B8%B0GO-%EC%95%B1-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85?page-id=2103%3A264&node-id=2103-1948&p=f&viewport=343%2C407%2C0.13&t=fLZ84TEaPv3X9zBC-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2103%3A1948"
+                                target="_blank"><span>프로토타입
                                     보기</span></a>
-                            <a
-                                href="https://www.figma.com/proto/8uD5c2MUGkUOITAxbNvwdN/%EC%97%AC%EA%B8%B0GO-%EC%95%B1-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85?page-id=2103%3A264&node-id=2103-1948&p=f&viewport=343%2C407%2C0.13&t=fLZ84TEaPv3X9zBC-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2103%3A1948"><span>프로토타입
-                                    보기</span></a>
+                            <a href="https://drive.google.com/file/d/1XZeTCz18WRbENurG90RK6QcYj9nQlVUG/view?usp=sharing"
+                                target="_blank"><span>기획서 보기</span></a>
                         </div>
                     </div>
                 </div>
@@ -295,95 +285,95 @@
                     <div class="project-info">
                         <div class="project-title">
                             <h2>04</h2>
-                            <span>메가커피</span>
-
+                            <span>메가커피 앱 리뉴얼</span>
                         </div>
                         <div class="project-body">
                             <h4> </h4>
                             <ul>
-                                <li>기술스택</li>
-                                <li>제작기간</li>
-                                <li>기여도</li>
-                                <li>브라우저 호환성</li>
-                                <li>배포매체</li>
-                                <li>페이지수</li>
+                                <li></li>
+                                <li>기술스택 : Figma</li>
+                                <li>제작기간 : 1-2주</li>
+                                <li>기여도 : 100%</li>
                             </ul>
                         </div>
                         <div class="project-tags">
-                            <a href=""><span>기획서 보기</span></a>
-                            <a href=""><span>프로토타입 보기</span></a>
+                            <a href="" target="_blank"><span>프로토타입 보기</span></a>
+                            <a href="" target="_blank"><span>기획서 보기</span></a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!--             <div class="projects-flex">
-                <div class="project-card">
-                    <div class="project-wrap">
-                        <div class="project-image">
-                            <img src="images/hanam.png" alt="Landing Page Design">
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-title">
-                            <h2>01</h2>
-                            <span>하남시청</span>
-                        </div>
-                        <div class="project-body">
-                            <h4> </h4>
-                            <ul>
-                                <li>기술스택</li>
-                                <li>제작기간</li>
-                                <li>기여도</li>
-                                <li>브라우저 호환성</li>
-                                <li>배포매체</li>
-                                <li>페이지수</li>
-                            </ul> 
-                        </div>
-                        <div class="project-tags">
-                            <span>기획서 보기</span>
-                            <span>사이트 보기</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
- 
             <div class="projects-flex">
                 <div class="project-card">
                     <div class="project-wrap">
                         <div class="project-image">
-                            <img src="images/hanam.png" alt="Landing Page Design">
+                            <video width="800" height="450" autoplay loop muted controls>
+                                <source src="images/liveandgrow.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-title">
-                            <h2>01</h2>
-                            <span>하남시청</span>
+                            <h2>05</h2>
+                            <span>Live&Grow 기업 홍보영상 제작</span>
                         </div>
                         <div class="project-body">
                             <h4> </h4>
                             <ul>
-                                <li>기술스택</li>
-                                <li>제작기간</li>
-                                <li>기여도</li>
-                                <li>브라우저 호환성</li>
-                                <li>배포매체</li>
-                                <li>페이지수</li>
+                                <li></li>
+                                <li>기술스택 : Premiere Pro, AI영상생성Tool(HailuoAI)</li>
+                                <li>제작기간 : 2주</li>
+                                <li>기여도 : 25%</li>
                             </ul>
                         </div>
                         <div class="project-tags">
-                            <span>기획서 보기</span>
-                            <span>사이트 보기</span>
+                            <a href="https://drive.google.com/file/d/1-n2IUrmd48oDovg-cHxgCeJnaORDvuj2/view?usp=sharing"
+                                target="_blank"><span>영상 보기</span></a>
+                            <a href="https://drive.google.com/file/d/1gaKAWAVT0fu8cxZV5ktDldyIRebVWnT7/view?usp=sharing"
+                                target="_blank"><span>기획서 보기</span></a>
                         </div>
                     </div>
                 </div>
             </div>
- -->
+
+            <div class="projects-flex">
+                <div class="project-card">
+                    <div class="project-wrap">
+                        <div class="project-image">
+                            <img src="images/cafein.png" alt="cafein">
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-title">
+                            <h2>06</h2>
+                            <span>cafeIN 카페 웹배너 제작</span>
+                        </div>
+                        <div class="project-body">
+                            <h4> </h4>
+                            <ul>
+                                <li></li>
+                                <li>기술스택 : Illustrator, Chat GPT</li>
+                                <li>제작기간 : 1주</li>
+                                <li>기여도 : 100%</li>
+                            </ul>
+                        </div>
+                        <div class="project-tags">
+                            <a href="https://drive.google.com/file/d/1HeU3j1iKd4S1xbVdbWidtPc2hMDCaty0/view?usp=sharing"
+                                target="_blank"><span>웹배너 보기</span></a>
+                            <a href="https://drive.google.com/file/d/1rVK32Plbwvkh1AcK-Y9fAIQIYEtpCpUl/view?usp=sharing"
+                                target="_blank"><span>기획서 보기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <div class="skills-content">
                 <div class="skills-text">
@@ -605,19 +595,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-about">
-                    <h3>About Us</h3>
+                    <!-- <h3>About Us</h3> -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea
                         commodo consequat.</p>
-                    <a href="#" class="btn btn-primary">Contact Us</a>
+                    <a href="#" class="btn btn-primary">Contact Me</a>
                 </div>
-
                 <div class="footer-contact">
-                    <h3>Contact Us</h3>
+                    <h3>Contact Me</h3>
                     <div class="contact-list">
-                        <p>Valentin, Street Road 24, New York,</p>
-                        <p><a href="tel:+000123456789">+000 123 (456) 789</a></p>
-                        <p><a href="mailto:biogracontact@gmail.com">biogracontact@gmail.com</a></p>
+                        <!-- <p>Valentin, Street Road 24, New York,</p> -->
+                        <p><a href="tel:+000123456789">010 8985 4725</a></p>
+                        <p><a href="mailto:biogracontact@gmail.com">gotaejung@gmail.com</a></p>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 // DOM Elements
 const header = document.querySelector('.header');
-const heroTitle = document.querySelector('.hero-title');
 const heroIntro = document.querySelector('.hero-intro');
 const heroImage = document.querySelector('.hero-image');
 const floatingShapes = document.querySelectorAll('.shape');
@@ -45,6 +44,103 @@ if (mobileToggle && navMenu) {
     });
 }
 
+// Project Image Drag Functionality
+function initProjectImageDrag() {
+    const projectImages = document.querySelectorAll('.project-image img');
+    
+    projectImages.forEach(img => {
+        let isDragging = false;
+        let startY = 0;
+        let startTransform = 0;
+        
+        // Get current transform value
+        function getCurrentTransform() {
+            const style = window.getComputedStyle(img);
+            const matrix = new DOMMatrixReadOnly(style.transform);
+            return matrix.m42; // translateY value
+        }
+        
+        // Mouse down event
+        img.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startY = e.clientY;
+            startTransform = getCurrentTransform();
+            img.classList.add('dragging');
+            e.preventDefault();
+        });
+        
+        // Mouse move event
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            
+            const deltaY = e.clientY - startY;
+            const newTransform = startTransform + deltaY;
+            
+            // Get container and image dimensions
+            const container = img.parentElement;
+            const containerHeight = container.offsetHeight; // 600px
+            const imageHeight = img.offsetHeight;
+            
+            // Calculate limits
+            const maxTransform = 0;
+            const minTransform = containerHeight - imageHeight;
+            
+            // Apply boundaries
+            const boundedTransform = Math.max(minTransform, Math.min(maxTransform, newTransform));
+            
+            img.style.transform = `translateY(${boundedTransform}px)`;
+        });
+        
+        // Mouse up event
+        document.addEventListener('mouseup', () => {
+            if (isDragging) {
+                isDragging = false;
+                img.classList.remove('dragging');
+            }
+        });
+        
+        // Touch events for mobile
+        img.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            startY = e.touches[0].clientY;
+            startTransform = getCurrentTransform();
+            img.classList.add('dragging');
+            e.preventDefault();
+        });
+        
+        document.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            
+            const deltaY = e.touches[0].clientY - startY;
+            const newTransform = startTransform + deltaY;
+            
+            const container = img.parentElement;
+            const containerHeight = container.offsetHeight;
+            const imageHeight = img.offsetHeight;
+            
+            const maxTransform = 0;
+            const minTransform = containerHeight - imageHeight;
+            
+            const boundedTransform = Math.max(minTransform, Math.min(maxTransform, newTransform));
+            
+            img.style.transform = `translateY(${boundedTransform}px)`;
+            e.preventDefault();
+        });
+        
+        document.addEventListener('touchend', () => {
+            if (isDragging) {
+                isDragging = false;
+                img.classList.remove('dragging');
+            }
+        });
+    });
+}
+
+// Initialize drag functionality when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    initProjectImageDrag();
+});
+
 // Smooth scrolling for navigation links
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -75,37 +171,43 @@ navLinks.forEach(link => {
 const heroTimeline = gsap.timeline();
 
 heroTimeline
-    .from('.hero-badges .badge', {
-        duration: 0.8,
-        y: 30,
-        opacity: 0,
-        stagger: 0.1,
-        ease: "power2.out"
-    })
-    .from(heroTitle, {
-        duration: 1.2,
-        y: 50,
-        opacity: 0,
-        ease: "power2.out"
-    }, "-=0.4")
-    .from(heroIntro, {
-        duration: 1,
-        x: -50,
-        opacity: 0,
-        ease: "power2.out"
-    }, "-=0.6")
-    .from('.main-image', {
-        duration: 1.5,
-        scale: 0.8,
-        opacity: 0,
-        ease: "power2.out"
-    }, "-=0.8")
-    .from('.side-image', {
-        duration: 1,
-        x: 50,
-        opacity: 0,
-        ease: "power2.out"
-    }, "-=0.5");
+  .from(".hero-badges .badge", {
+    duration: 0.8,
+    y: 30,
+    opacity: 0,
+    stagger: 0.1,
+    ease: "power2.out",
+  })
+  .from(
+    heroIntro,
+    {
+      duration: 1,
+      x: -50,
+      opacity: 0,
+      ease: "power2.out",
+    },
+    "-=0.6"
+  )
+  .from(
+    ".main-image",
+    {
+      duration: 1.5,
+      scale: 0.8,
+      opacity: 0,
+      ease: "power2.out",
+    },
+    "-=0.8"
+  )
+  .from(
+    ".side-image",
+    {
+      duration: 1,
+      x: 50,
+      opacity: 0,
+      ease: "power2.out",
+    },
+    "-=0.5"
+  );
 
 // Floating shapes animation
 floatingShapes.forEach((shape, index) => {
@@ -345,19 +447,6 @@ gsap.from('.skills-image img', {
     }
 });
 
-// Testimonials animation
-gsap.from('.testimonial-card', {
-    duration: 1,
-    y: 50,
-    opacity: 0,
-    ease: "power2.out",
-    scrollTrigger: {
-        trigger: '.testimonial-card',
-        start: "top 80%",
-        end: "bottom 20%",
-        toggleActions: "play none none reverse"
-    }
-});
 
 // Footer animation
 gsap.from('.footer-content > *', {
@@ -471,4 +560,38 @@ window.addEventListener('resize', () => {
     ScrollTrigger.refresh();
 });
 
-console.log('Biogra Portfolio - JavaScript loaded successfully with GSAP animations');
+//hero-title
+// 초기 상태 설정
+gsap.set(".hero-title span.dyn .a1, .hero-title span.dyn .a2", {
+  y: 200,
+  opacity: 0
+});
+
+const heroTl = gsap.timeline({ repeat: -1, delay: 0.5 });
+heroTl
+  .to(".hero-title span.dyn .a1", {
+    y: 70,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out"
+  })
+  .to(".hero-title span.dyn .a1", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    delay: 1.5,
+    ease: "power2.in"
+  })
+  .to(".hero-title span.dyn .a2", {
+    y: 70,
+    opacity: 1,
+    duration: 1,
+    ease: "power2.out"
+  }, "-=0.3")
+  .to(".hero-title span.dyn .a2", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    delay: 1.5,
+    ease: "power2.in"
+  });
