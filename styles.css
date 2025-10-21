@@ -180,29 +180,51 @@ a {
 }
 
 .hero-badges {
-  max-width: 350px;
+  max-width: 550px;
   width: 100%;
   height: 190px;
   position: relative;
   border-radius: 10px;
-  margin-top: 90px;
-  margin-right: 100px;
+  margin-top: 80px;
+  margin-left: 360px;
+  transition: all 0.3s ease;
 }
 
 .hero-badge {
   background-color: #ffffff;
   border: 1px solid #ccc;
-  padding: 24px 32px;
+  padding: 16px 28px;
   border-radius: 32px;
   font-size: 16px;
   font-weight: 600;
   margin: 5px;
+  transition: all 0.3s ease;
+
+/*     text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 20px 40px;
+    border-radius: 100px;
+    margin: 5px; */
 }
 .hero-badge:hover {
-  background-color: #000;
-  border: 1px solid #000;
-  color: white;
+/*     background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0; */
+
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #e0e0e0;
 }
+
+
 
 .hero-title {
   display: flex;
@@ -253,9 +275,10 @@ a {
   display: flex;
   align-items: center;
   align-items: start;
-  justify-content: space-between;
+  margin-top: 20px;
   padding-bottom: 100px;
   padding-top: 180px;
+
 }
 .intro-contents {
   display: block;
@@ -425,11 +448,11 @@ a {
 }
 
 .experience-education > ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 80px;
-  margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    justify-items: center;
+    gap: 150px;
+    margin-bottom: 100px;
 }
 
 .timeline-list {
@@ -553,7 +576,7 @@ a {
 
 /* Works Section */
 .works {
-    padding: 100px 0 200px;
+    padding: 100px 0 100px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
 }
@@ -595,9 +618,9 @@ a {
 
 .project-card{
     display: flex;
-    align-items: center;
-
+    flex-direction: row;
 }
+
 
 .project-wrap{
     padding: 30px 0;
@@ -881,7 +904,7 @@ a {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and  (max-width: 768px) {
     .nav-menu {
         position: fixed;
         top: 80px;
@@ -951,7 +974,17 @@ a {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .experience-education>ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+/*   gap: 80px; */
+/*   margin-bottom: 100px; */
+}
     
+
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -963,6 +996,10 @@ a {
     
     .hero-title {
         font-size: 24px;
+    }
+
+    .hero-title>.fix{
+        font-size: 120px;
     }
     
     .section-title {
@@ -977,10 +1014,20 @@ a {
         grid-template-columns: 1fr;
     }
     
-    .services-grid {
-        grid-template-columns: 1fr;
+
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
-}
+
+    .section-header{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  }
+
 
 @media (max-width: 480px) {
     .container {
@@ -1016,8 +1063,8 @@ a {
     .testimonial-card {
         padding: 40px 30px;
     }
-}
 
+}
 /* Smooth scroll for all sections */
 section {
     scroll-margin-top: 80px;
