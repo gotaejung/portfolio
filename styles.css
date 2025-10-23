@@ -654,8 +654,7 @@ a {
 
 /* Mobile Prototype Styles */
 .project-prototype {
-
-/*     margin: 0 auto; */
+    margin: 0 auto;
     width: 375px;
     height: 812px;
     position: relative;
@@ -695,19 +694,6 @@ a {
     transform: scale(1.05);
 } */
 
-
-
-.project-info {
-/*     padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 20px;
-    /* padding-bottom: 10px; */
-/*     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; */ 
-}
 
 .project-title{
 /*     padding-left: 30px;
@@ -785,6 +771,10 @@ a {
     background-color: #000;
 }
 
+/* 3번째 프로젝트(여기GO) 중앙 정렬 */
+.projects-flex:nth-child(4){
+  justify-content: center;
+}
 
 /* Skills Section */
 .skills {
