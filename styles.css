@@ -56,6 +56,7 @@ a {
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
+    
 }
 
 .btn-primary {
@@ -69,6 +70,11 @@ a {
     line-height: 1;
     padding: 20px 40px;
     border-radius: 100px;
+
+    padding: 16px 28px;
+    border-radius: 32px;
+    margin-top: 20px;
+    margin-right: 5px;
 }
 
 .btn-primary:hover {
@@ -275,7 +281,7 @@ a {
   display: flex;
   align-items: center;
   align-items: start;
-  margin-top: 20px;
+  margin-top: 50px;
   padding-bottom: 100px;
   padding-top: 180px;
 
@@ -619,6 +625,7 @@ a {
 .project-card{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 
@@ -638,6 +645,12 @@ a {
     overflow: hidden;
     border-radius: 10px;
 }
+
+.projects-flex:nth-child(6) .project-image {
+    width: 800px;
+    height: 400px;
+}
+
 
 /* Mobile Prototype Styles */
 .project-prototype {
@@ -858,6 +871,9 @@ a {
     margin-top: 20px;
 }
 
+.skill-item .react{
+  font-size: 14px;
+}
 
 /* Footer */
 .footer {
@@ -874,7 +890,7 @@ a {
 }
 
 .footer-about h3{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -892,7 +908,8 @@ a {
 
 .contact-list p {
     margin-bottom: 10px;
-    color: #ccc;
+    color: #ffffff;
+    font-size: 20px;
 }
 
 .contact-list a {
